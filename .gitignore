@@ -1,0 +1,10 @@
+# Maven build output
+target/
+
+# Vim swap files
+*.swp
+
+# Logs
+*.log
+nohup.out
+

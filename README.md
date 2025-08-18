@@ -62,23 +62,21 @@ This repository demonstrates a complete DevOps workflow using a **Java Spring Bo
 3. **Pipeline Execution**  
 
    - **Stage 1:** Clone code  
-     *(optional screenshot if available)*  
 
    - **Stage 2:** Run JUnit tests  
-     *(optional screenshot if available)*  
 
    - **Stage 3:** Build Maven artifacts & Docker image  
-     ![Build Success Screenshot](screenshots/Build-Success.png)  
+     ![Build Success Screenshot](Images/Build-Success.png)  
 
    - **Stage 4:** Push Docker image to DockerHub  
-     ![DockerHub Push Screenshot](screenshots/dockerHub-image.png)  
+     ![DockerHub Push Screenshot](Images/dockerHub-image.png)  
 
    - **Stage 5:** Deploy Docker container  
-     ![Deployment Screenshot](screenshots/container-image.png)  
+     ![Deployment Screenshot](Images/container-image.png)  
 
 4. **Verify Application**  
-   - Access via browser: `http://<EC2-Public-IP>:8080`  
-     ![Application Access Screenshot](screenshots/Browser-Output.png)  
+   - Access via browser: `http://<EC2-Public-IP>:8081`  
+     ![Application Access Screenshot](Images/Browser-Output.png)  
 
 ---
 
@@ -89,7 +87,7 @@ git clone https://github.com/<your-username>/Devops-Project.git
 cd Devops-Project
 mvn clean package -DskipTests
 docker build -t dev-app .
-docker run -d -p 8080:8080 dev-app
+docker run -d -p 8081:8080 dev-app
 
 ---
 >>>>>>> afe56ba ( adding images)

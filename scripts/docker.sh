@@ -1,6 +1,8 @@
-#!/bin/bash
-set -xe
+!/bin/bash
 # Script to install Docker on an EC2 instance and configure permissions
+# Send all output to a file so we can debug after boot
+# exec > /var/log/user_data.log 2>&1 ( use this to automate through terraform)
+set -xe
 # Update the package list
 sudo apt-get update -y
 

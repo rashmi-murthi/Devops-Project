@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-# Devops-Project.
 
-
-This repository contains the following components:
-
-1.  Simple Java Code
-2.  Dockerfile
-3.  Kubernetes manifests (`deployment.yaml` & `service.yaml`)
-4.  Jenkinsfile ( CI & CD )
-
-
-
-=======
 # DevOps Project
 
 This repository demonstrates a complete DevOps workflow using a **Java Spring Boot application**, containerization with **Docker**, and CI/CD automation with **Jenkins**.
@@ -65,18 +52,22 @@ This repository demonstrates a complete DevOps workflow using a **Java Spring Bo
 
    - **Stage 2:** Run JUnit tests  
 
-   - **Stage 3:** Build Maven artifacts & Docker image  
-     ![Build Success Screenshot](Images/Build-Success.png)  
+   - **Stage 3:** Build Maven artifacts & Docker image
 
-   - **Stage 4:** Push Docker image to DockerHub  
-     ![DockerHub Push Screenshot](Images/dockerHub-image.png)  
+     ![Build Success](Images/Build-Success.png)  
 
-   - **Stage 5:** Deploy Docker container  
-     ![Deployment Screenshot](Images/container-image.png)  
+   - **Stage 4:** Push Docker image to DockerHub
+
+     ![DockerHub Push](Images/dockerHub-image.png)  
+
+   - **Stage 5:** Deploy Docker container
+
+     ![Deployment](Images/container-image.png)  
 
 4. **Verify Application**  
-   - Access via browser: `http://<EC2-Public-IP>:8081`  
-     ![Application Access Screenshot](Images/Browser-Output.png)  
+   - Access via browser: `http://<EC2-Public-IP>:8081`
+
+     ![Application Access ](Images/Browser-Output.png)  
 
 ---
 
@@ -90,4 +81,3 @@ docker build -t dev-app .
 docker run -d -p 8081:8080 dev-app
 
 ---
->>>>>>> afe56ba ( adding images)
